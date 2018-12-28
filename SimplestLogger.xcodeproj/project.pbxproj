@@ -12,6 +12,8 @@
 		98E073E221D6AEB900D40473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E073E021D6AEB900D40473 /* Main.storyboard */; };
 		98E073E421D6AEBA00D40473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E073E321D6AEBA00D40473 /* Assets.xcassets */; };
 		98E073E721D6AEBA00D40473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E073E521D6AEBA00D40473 /* LaunchScreen.storyboard */; };
+		98E073EF21D6AEDE00D40473 /* SimplestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E073EE21D6AEDE00D40473 /* SimplestLogger.swift */; };
+		98E073F121D6C01F00D40473 /* DefualtLoggerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E073F021D6C01F00D40473 /* DefualtLoggerFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		98E073E321D6AEBA00D40473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98E073E621D6AEBA00D40473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98E073E821D6AEBA00D40473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E073EE21D6AEDE00D40473 /* SimplestLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplestLogger.swift; sourceTree = "<group>"; };
+		98E073F021D6C01F00D40473 /* DefualtLoggerFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefualtLoggerFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				98E073DC21D6AEB900D40473 /* AppDelegate.swift */,
 				98E073DE21D6AEB900D40473 /* ViewController.swift */,
+				98E073EE21D6AEDE00D40473 /* SimplestLogger.swift */,
+				98E073F021D6C01F00D40473 /* DefualtLoggerFormatter.swift */,
 				98E073E021D6AEB900D40473 /* Main.storyboard */,
 				98E073E321D6AEBA00D40473 /* Assets.xcassets */,
 				98E073E521D6AEBA00D40473 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E073F121D6C01F00D40473 /* DefualtLoggerFormatter.swift in Sources */,
 				98E073DF21D6AEB900D40473 /* ViewController.swift in Sources */,
 				98E073DD21D6AEB900D40473 /* AppDelegate.swift in Sources */,
+				98E073EF21D6AEDE00D40473 /* SimplestLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
