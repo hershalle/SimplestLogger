@@ -24,27 +24,27 @@ public class SimplestLogger {
     public static var formatter: LoggerFormatter = DefualtLoggerFormatter()
 
     public static func verbose(_ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
-        log(level: .verbose, message, filePath, function, line, context: context)
+        log(level: .verbose, message(), filePath, function, line, context: context)
     }
 
     public static func debug(_ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
-        log(level: .debug, message, filePath, function, line, context: context)
+        log(level: .debug, message(), filePath, function, line, context: context)
     }
 
     public static func info(_ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
-        log(level: .info, message, filePath, function, line, context: context)
+        log(level: .info, message(), filePath, function, line, context: context)
     }
 
     public static func warning(_ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
-        log(level: .warning, message, filePath, function, line, context: context)
+        log(level: .warning, message(), filePath, function, line, context: context)
     }
 
     public static func error(_ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
-        log(level: .error, message, filePath, function, line, context: context)
+        log(level: .error, message(), filePath, function, line, context: context)
     }
 
     static func log(level: Level, _ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
-        let formatedMessage = formatter.format(message, level, filePath, function, line, context: context)
+        let formatedMessage = formatter.format(message(), level, filePath, function, line, context: context)
         print(formatedMessage)
     }
 }

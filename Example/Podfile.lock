@@ -1,5 +1,5 @@
 PODS:
-  - SimplestLogger (0.1.0)
+  - SimplestLogger (0.1.2)
 
 DEPENDENCIES:
   - SimplestLogger (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimplestLogger: fc671694bdaa3c9efe2f7196633fb6ad246c0796
+  SimplestLogger: 1eb14bfc9dc40b1f8d3f29369805c771af341ef8
 
 PODFILE CHECKSUM: 601f19d7bf3ea5ad8537c852b49da67dfcae7aec
 
