@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  SimplestLogger
+//  Example
 //
-//  Created by Shai Balassiano on 28/12/2018.
-//  Copyright © 2018 Shai Balassiano. All rights reserved.
+//  Created by Shai Balassiano on 17/02/2019.
+//  Copyright © 2019 Shai Balassiano. All rights reserved.
 //
 
 import UIKit

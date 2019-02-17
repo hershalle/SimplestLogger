@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DefualtLoggerFormatter: LoggerFormatter {
+public struct DefualtLoggerFormatter: LoggerFormatter {
     func symbol(from level: SimplestLogger.Level) -> String {
         switch level {
         case .debug:
@@ -40,7 +40,7 @@ struct DefualtLoggerFormatter: LoggerFormatter {
         return formatter
     }()
 
-    func format(_ message: @autoclosure () -> Any = "", _ level: SimplestLogger.Level, _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) -> String {
+    public func format(_ message: @autoclosure () -> Any = "", _ level: SimplestLogger.Level, _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) -> String {
         let messageString = "\(message())"
         let levelSymbol = symbol(from: level)
         let fileName = self.fileName(path: filePath, withoutType: true)

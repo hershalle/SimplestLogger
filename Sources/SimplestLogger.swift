@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol LoggerFormatter {
+public protocol LoggerFormatter {
     func format(_ message: @autoclosure () -> Any, _ level: SimplestLogger.Level, _ filePath: String, _ function: String, _ line: Int, context: Any?) -> String
 }
 
-class SimplestLogger {
-    enum Level {
+public class SimplestLogger {
+    public enum Level {
         case debug
         case error
         case info
@@ -21,9 +21,9 @@ class SimplestLogger {
         case warning
     }
 
-    static var formatter: LoggerFormatter = DefualtLoggerFormatter()
+    public static var formatter: LoggerFormatter = DefualtLoggerFormatter()
 
-    static func verbose(_ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
+    public static func verbose(_ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
         log(level: .verbose, message, filePath, function, line, context: context)
     }
 
