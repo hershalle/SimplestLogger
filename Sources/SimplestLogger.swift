@@ -43,7 +43,7 @@ public class SimplestLogger {
         log(level: .error, message(), filePath, function, line, context: context)
     }
 
-    static func log(level: Level, _ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
+    public static func log(level: Level, _ message: @autoclosure () -> Any = "", _ filePath: String = #file, _ function: String = #function, _ line: Int = #line, context: Any? = nil) {
         let formatedMessage = formatter.format(message(), level, filePath, function, line, context: context)
         print(formatedMessage)
     }

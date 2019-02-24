@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'SimplestLogger'
-  spec.version          = '0.1.2'
+  spec.version          = '0.1.3'
   spec.summary          = 'A simple logger'
 
   spec.description      = <<-DESC
